@@ -73,13 +73,6 @@ function showRiddle() {
 
 }
 
-/**
- * TODO: Unhide the riddle's answer
- * - If there is no riddle shown, alert the user that there is no riddle
- * - If there is a riddle shown and an answer shown, alert the user
- *   that the answer is already revealed
- * - If there is a riddle shown but no answer, unhide the answer!
- */
 function revealAnswers() {
   const riddleContainer = document.querySelector('.riddle-content')
   const riddle = riddleContainer.querySelector('p')
@@ -120,12 +113,6 @@ function revealAnswers() {
 function getRandomData(type) {
   return data[type][rn(data[type].length)]
 }
-
-// ----------------------------------------------------
-// NO NEED TO CHANGE ANYTHING BELOW but...
-// feel free to add/remove items from these lists to customize
-// your results
-// ----------------------------------------------------
 
 // Source: https://www.thecoderpedia.com/blog/programming-memes/, Reddit
 const memes = [
